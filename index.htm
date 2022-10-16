@@ -1,0 +1,55 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="font/css/font-awesome.min.css">
+    <meta name="description" content="sub.space"> 
+    <meta name="keywords" content="sub.space"> 
+    <title>The site is under construction..</title>
+  </head>
+  <body>
+
+    <header class="bgimg w3-display-container w3-grayscale-min" id="home">
+      <!-- div class="w3-display-bottomleft w3-center w3-padding-large w3-hide-small">
+	<span class="w3-tag"></span>
+      </div-->
+      <div class="w3-display-middle w3-center">
+	<span class="title" class="w3-text-white" id="msgTip" style="font-size:5vw"></span>
+      <p>The domain is for sale.</p>
+      <button type="submit">
+       Sale@Hi.Domains</button>
+
+      </button>
+      <hr>
+      <i class="fa fa-envelope-open-o"></i>
+      <i class="fa fa-twitter"></i>
+      <i class="fa fa-weixin"></i>
+      </div>
+    </header>
+
+  </body>
+  <script> 
+    function winsx(url) 
+  {
+    var winurl =url?url:(unescape(window.location.href));
+    var wlp = winurl.split("?")[1];
+    var wincs = wlp.split("&");
+    for(var i=0; i<wincs.length; i++)
+    {
+      var tur = wincs[i].split("=");
+      eval('this.'+tur[0]+'="'+tur[1]+'";');
+    }
+  }
+  function getInfo()
+  { 
+  var refURL=location.hostname;
+  var str="<br>" +refURL+"";
+  document.getElementById("msgTip").innerHTML=str; 
+  } 
+  window.onload=getInfo;
+  
+  
+  </script>
+</html>
